@@ -39,8 +39,8 @@ class RubyDocx::Document
 
   protected
   def write_file(file)
-    zf = Zip::ZipFile.new File.expand_path("../../template.docx", __FILE__)
-    buffer = Zip::ZipOutputStream.write_buffer do |out|
+    zf = Zip::File.new File.expand_path("../../template.docx", __FILE__)
+    buffer = Zip::OutputStream.write_buffer do |out|
       zf.entries.each do |e|
         if e.ftype == :directory
           out.put_next_entry(e.name)

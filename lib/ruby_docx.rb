@@ -1,7 +1,7 @@
 # encoding: utf-8
 require "nokogiri"
 require "css_parser"
-require "zip/zip"
+require "zip"
 require "ruby_docx/version"
 
 module RubyDocx

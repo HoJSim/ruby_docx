@@ -18,5 +18,5 @@ Gem::Specification.new do |gem|
   gem.require_paths = ["lib"]
   gem.add_dependency 'nokogiri', '>= 1.5.5'
   gem.add_dependency 'css_parser'
-  gem.add_dependency 'rubyzip'
+  gem.add_dependency 'rubyzip', '>= 1.0.0'
 end
